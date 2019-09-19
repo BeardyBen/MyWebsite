@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Landscapes</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <script src = "js/js.js"></script>
+    <ul>
+        <li id="SiteLogo">Thirteenpence</li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li class="dropdown">
+                <a href="javascript:void(0)" class="active" class="dropbtn">Galleries</a>
+                <div class="dropdown-content">
+                  <a href="gallery.html">Figures</a>
+                  <a href="gallery2.html">Landscapes</a>
+                  <a href="gallery3.html">Design Work</a>
+        <li style="float:right"><a href="contact.html">Contact</a></li>
+      </ul>
+
+    <h3>Landscapes</h3>
+
+  <div class ="row">
+    <div class="gallery">
+        <a>
+          <img src="images/landscape1.jpg" alt="Jurassic" onclick="imageExp(this)">
+        </a>
+    </div>
+    <div class="gallery">    
+        <a>
+            <img src="images/landscape2.jpg" alt="Trees" onclick="imageExp(this)">
+        </a>
+    </div>
+    <div class="gallery">
+        <a>
+          <img src="images/landscape3.jpg" alt="Island" onclick="imageExp(this)">
+        </a>
+    </div>
+      <div class="gallery">
+        <a>
+          <img src="images/landscape4.jpg" alt="Ink Render" onclick="imageExp(this)">
+        </a>
+    </div>
+  </div>
+<div class="container">
+    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+    <img id="expandedImg" style="width:700px">
+    <div id="imgtext"></div>
+  </div>
+</body>
+<footer>
+    ©2019 by Thirteenpence
+</footer>
+</html>
